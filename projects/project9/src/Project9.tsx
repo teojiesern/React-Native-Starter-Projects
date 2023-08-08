@@ -1,9 +1,9 @@
-import {StyleSheet, Text, View} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Home from './screens/Home';
+import { StyleSheet } from 'react-native';
 import Details from './screens/Details';
+import Home from './screens/Home';
 
 // this is telling the type of the params that we are going to pass to these stacks if any, if undefined means that we are not expecting any params to be passed on into here
 // by passing the union here we are saying that the parameter here is optional to be passed on, note that if the param here does not have the union, then whenever we are going to use navigation.navigate to this details page, and we do not pass in a prop ts would yell at us saying that we are missing a parameter
